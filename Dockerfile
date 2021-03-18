@@ -29,7 +29,7 @@ RUN \
 RUN unzip /tmp/go-agent-20.8.0-12213.zip -d /
 RUN mv /go-agent-20.8.0 /go-agent && chown -R ${UID}:0 /go-agent && chmod -R g=u /go-agent
 
-FROM ubuntu:bionic
+FROM ubuntu:focal
 
 LABEL gocd.version="20.8.0" \
   description="GoCD agent based on ubuntu version 18.04" \
